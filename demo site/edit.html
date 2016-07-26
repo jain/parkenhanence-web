@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Parkenhance: Edit Lot</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link href="css/edit.css" rel="stylesheet">
+
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="lotlist.html">Parkenhance</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="lotlist.html">Manager01</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="page-header">
+        <h1>Edit Lot</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3 class="columnHeader">North Lot</h3>
+            <div class="col-md-12">
+                <table class="table" id="tableBack">
+                    <!--<tr>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>-->
+                </table>
+            </div>
+
+            <div class="col-xs-4">
+                <label class="btn btn-lg btn-primary btn-block" for="getval">
+                    <input id="getval" type="file" style="display:none;">
+                    Upload Background
+                </label>
+            </div>
+
+            <div class="dropdown col-xs-4">
+                <button class="btn btn-lg btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                    Floor Select
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a>Basement</a></li>
+                    <li><a>Floor 1</a></li>
+                    <li><a>Floor 2</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <button class="btn btn-xs btn-info center-block" type="submit">Add New Floor</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xs-4">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="columnHeader">Tool Select</h3>
+            <ul class="list-group" id="toolSelect">
+                <li class="list-group-item" id="lPark">Parking Spot</li>
+                <li class="list-group-item" id="lUp">Road <span class="glyphicon glyphicon-arrow-up"></span></li>
+                <li class="list-group-item" id="lDown">Road <span class="glyphicon glyphicon-arrow-down"></span></li>
+                <li class="list-group-item" id="lVert">Road <span class="glyphicon glyphicon-resize-vertical"></span>
+                </li>
+                <li class="list-group-item" id="lLeft">Road <span class="glyphicon glyphicon-arrow-left"></span></li>
+                <li class="list-group-item" id="lRight">Road <span class="glyphicon glyphicon-arrow-right"></span></li>
+                <li class="list-group-item" id="lHori">Road <span class="glyphicon glyphicon-resize-horizontal"></span>
+                </li>
+                <li class="list-group-item" id="lUnnav">Unnavigable</li>
+                <!-- ↑↓↕←→↔ -->
+            </ul>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Lot Settings</button>
+
+        </div>
+    </div>
+
+    <div class="row rowPad">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h2 class="columnHeader">Select Location</h2>
+            <iframe
+                    width="800" height="600" frameborder="0" style="border:0" allowfullscreen
+                    src="map.html">
+
+            </iframe>
+            <button class="btn btn-lg btn-primary center-block buttonMargin" type="submit">Save Location</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="jscript/edit.js"></script>
+</body>
+</html>

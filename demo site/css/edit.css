@@ -1,0 +1,40 @@
+td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+#tableBack {
+    background-image:url('');
+    background-size:contain;
+    background-position: center;
+}
+.columnHeader {
+    text-align: center;
+}
+.list-group-item {
+    text-align: center;
+    background-color: #eee;
+    font-size: 18px;
+ }
+ .page-header {
+  text-align: center;
+}
+.rowPad {
+    margin-top: 2.5%;
+}
+.buttonMargin {
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+#some-id{
+    cursor: auto; /* fallback */
+    cursor: url(img/icon.png) 0 0, auto;
+}
+
+#body{
+    overflow-x: scroll;
+}
